@@ -1,0 +1,276 @@
+<!DOCTYPE html> 
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Άγγελος Φραντζεσκάκης">
+    <meta name="description" content="Οδηγός HTML για αρχάριους - τα βασικά που πρέπει να ξέρεις">
+    <title>10 HTML Tips για Αρχάριους Developers | Άγγελος Blog</title>
+    </head>
+<body>
+    <!--Header Section-->
+    <header>
+        <h1>Άγγελος Dev Blog</h1>
+        <nav>
+            <a href="index.html">Home (Blog)</a> |
+            <a href="../03-cv/index.html">CV</a> |
+            <a href="../04-anime-list/index.html">Anime List</a> |
+        </nav>
+    </header>
+
+    <!--Article-->
+    <article>
+        <!-- Article Header -->
+         <header>
+        <h1>10 HTML Tips για Αρχάριους Web Developers</h1>
+        <p>
+            <strong>Συγγραφέας:</strong>Άγγελος Φραντζεσκάκης<br>
+            <strong>Δημοσίευση:</strong>29 Σεπτεμβρίου 2025<br>
+            <strong>Χρόνος ανάγνωσης:</strong>8 λεπτά<br>
+            <strong>Κατηγορία: </strong>Web Development, HTML<br>
+        </p>
+        </header>
+
+        <!--Introduction-->
+        <section>
+            <h2>Εισαγωγή</h2>
+            <p>
+                Όταν ξεκίνησα να μαθαίνω web development, έκανα πολλά λάθη που θα μπορούσαν 
+                να είχαν αποφευχθεί. Σε αυτό το άρθρο, μοιράζομαι <mark>10 tips</mark> που 
+                θα βοηθήσουν αρχάριους developers να γράφουν καλύτερο HTML κώδικα.
+            </p>
+        </section>
+
+        <!--Tip 1-->
+        <section>
+            <h2>1. Χρησιμοποίησε Semantic HTML Tags</h2>
+            <p>
+               Αντί να χρησιμοποιείς <code>&lt;div&gt;</code> για τα πάντα, χρησιμοποίησε 
+                semantic tags που δίνουν νόημα στο περιεχόμενο.
+            </p>
+
+            <h3><ins>Κακό</ins> Παράδειγμα:</h3>
+              <pre><code>&lt;div class="header"&gt;
+    &lt;div class="navigation"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="main"&gt;
+    &lt;div class="article"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h3><ins>Καλό</ins> Παράδειγμα:</h3>
+              <pre><code>&lt;header&gt;
+    &lt;nav&gt;...&lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+    &lt;article&gt;...&lt;/article&gt;
+&lt;/main&gt;</code></pre>
+
+            <p>
+                <strong>Γιατί είναι σημαντικό:</strong> Semantic HTML βελτιώνει το SEO, 
+                την accessibility, και κάνει τον κώδικα πιο readable.
+            </p>
+        </section>
+
+        <!--Tip 2-->
+        <section>
+            <h2>2. Πάντα Προσθέτε Alt Text στις Εικόνες</h2>
+            
+            <p>
+               Το<code>alt</code> attribute είναι απαραίτητο για το accessibility και SEO
+            </p>
+
+            <h3>Παράδειγμα:</h3>
+            <pre><code>&lt;!-- ❌ Λάθος --&gt;
+&lt;img src="logo.png"&gt;
+
+&lt;!-- ✅ Σωστό --&gt;
+&lt;img src="logo.png" alt="Company Logo"&gt;</code></pre>
+
+            <p>
+                <strong>Tip:</strong> Γράψε descriptive alt text που εξηγεί τι δείχνει η εικόνα, όχι "image" ή "photo".
+            </p>
+        </section>
+
+        <!--Tip 3-->
+        <section>
+            <h2>3. Χρησιμοποίησε Σωστές Heading Levels</h2>
+            <p>
+                Τα headings πρέπει να ακολουθούν ιεραρχική σειρά: <code>&lt;h1&gt;</code> → <code>&lt;h2&gt;</code> → <code>&lt;h3&gt;</code>
+            </p>
+        
+            <h3>Κανόνες:</h3>
+              <ol>
+                <li>Μόνο ένα <code>&lt;h1&gt;</code> ανά σελίδα </li>
+                <li>Μην παραλείπεις επίπεδα (π.χ. από h2 σε h4)</li>
+                <li>Χρησιμοποίησε headings για δομή, όχι για styling</li>
+              </ol>
+        </section>
+
+        <!--Tip 4-->
+        <section>
+            <h2>4. Validation και Testing</h2>
+            
+            <p>
+                Πάντα να ελέγχεις τον κώδικα σου για errors.Χρησιμοποίησε το <a href="https://validator.w3.org/" target="_blank">W3C Markup Validator</a>
+                
+            </p>
+
+            <h3>Keyboard Shortcuts που βοηθάνε:</h3>
+            <dl>
+                <dt><kbd>Ctrl</kbd> + <kbd>S</kbd></dt>
+                <dd>Save file</dd>
+
+                <dt><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd></dt>
+                <dd>Άνοιγμα Developer Tools</dd>
+
+                <dt><kbd>F5</kbd></dt>
+                <dd>Refresh page</dd>
+
+                <dt><kbd>Ctrl</kbd> + <kbd>U</kbd></dt>
+                <dd>View page source</dd>
+            </dl>
+        </section>
+
+        <!--Tip 5-->
+        <section>
+            <h2>5. Indentation και Formatting</h2>
+            <p>Καθαρός κώδικας είναι readable κώδικας. Χρησιμοποίησε consistent indentation.</p>
+
+            <h3>Παράδειγμα με 2 spaces indentation:</h3>
+            <pre><code>&lt;section&gt; 
+    &lt;h2&gt;Title&lt;/h2&gt;
+    &lt;p&gt;Content...&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/section&gt;</code></pre>
+
+            <p>
+                <strong>VS Code Tip:</strong> Χρησιμοποίησε ένα code editor που υποστηρίζει auto-formatting, όπως το VSCode με <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd>.
+            </p>    
+        </section>
+
+         <!--Tip 6-->
+         <section>
+             <h2>6. Meta Tags για SEO</h2>
+
+                <p>
+                   Πρόσθεσε σωστά meta tags στο <code>&lt;head&gt;</code> για καλύτερο SEO. 
+                </p>
+
+                <h3>Essential meta tags:</h3>
+                <pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta name="description" content="Page description"&gt;
+&lt;meta name="author" content="Your Name"&gt;
+&lt;title&gt;Page Title&lt;/title&gt;</code></pre>    
+            </section>
+    
+            <!--Tip 7-->
+            <section>
+                <h2>Comments για Οργάνωση</h2>
+                <p>
+                    Χρησιμοποίησε HTML comments για να οργανώσεις τον κώδικά σου.
+                </p>
+
+                <h3>Παράδειγμα:</h3>
+                <pre><code>&lt;!-- Header Section --&gt;
+&lt;header&gt;...&lt;/header&gt;
+
+&lt;!-- Main Content --&gt;
+&lt;main&gt;...&lt;/main&gt;</code></pre>
+              <p>
+                <strong>Προσοχή:</strong> Μην βάζεις sensitive information σε comments - είναι ορατά στο source code!
+              </p>
+            </section>
+
+            <!--Tip 8-->
+            <section>
+                <h2>8. Links και Navigation</h2>
+                <p>
+                    Για external links, χρησιμοποίησε <kbd>target=</kbd>"<kbd>_blank</kbd>"και <kbd>rel=</kbd>"<kbd>noopener noreferrer</kbd>" για ασφάλεια.
+                </p>
+
+                <h3>Παράδειγμα:</h3>
+                <pre><code>&lt;!--Internal link--&gt;
+&lt;a href="/about.html"&gt;About&lt;/a&gt;
+
+&lt;!--External link--&gt;
+&lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;Example&lt;/a&gt;</code></pre>
+            </section>
+
+            <!--Tip 9-->
+            <section>
+                <h2>9. Forms και User Input</h2>
+                <p>
+                    Χρησιμοποίησε proper form elements με <kbd>label</kbd> tages για accessibility.
+                </p>
+
+                <h3>Παράδειγμα:</h3>
+                <pre><code>&lt;form&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" name="message" required&gt;&lt;/textarea
+
+    &lt;button type="submit"&gt;Send&lt;/button&gt;
+    &lt;/form&gt;</code></pre>
+            </section>
+
+            <!--Tip 10-->
+            <section>
+                <h2>10. Testing σε Διαφορετικά Browsers</h2>
+                <p>
+                    Ο κώδικάς σου πρέπει να δουλεύει σε όλα τα browsers. Test σε:
+                    <ul>
+                        <li>Chrome / Edge</li>
+                        <li>Firefox</li>
+                        <li>Safari (αν έχεις Mac)</li>
+                        <li>Mobile browsers</li>
+                    </ul>
+                </p>
+
+                <p><strong>Developer Tools tip:</strong>Πάτα <kbd>F12</kbd> και χρησιμοποίησε το mobile device simulator</p>
+            </section>
+
+            <!--Conclusion-->
+            <section>
+                <h2>Συμπέρασμα</h2>
+                <p>
+                    Αυτά τα 10 tips θα σε βοηθήσουν να γράφεις καλύτερο HTML κώδικα από την αρχή. 
+                    Θυμήσου: <mark>η πρακτική κάνει τον δάσκαλο</mark>. Όσο περισσότερα projects 
+                    φτιάχνεις, τόσο καλύτερος θα γίνεσαι.
+                </p>
+
+                <p>
+                    Αν σου άρεσε αυτό το άρθρο, δες και τα projects μου στο <a href="https://github.com/Frezzaroukos" target="_blank">GitHub</a>
+                </p>
+            </section>
+
+            <!--Article Footer-->
+            <footer>
+<hr>
+<p>
+    <strong>Tags:</strong>
+    <a href="#">HTML</a>,
+    <a href="#">Web Development</a>,
+    <a href="#">Beginner</a>
+    <a href="#">Tutorial</a>
+</p>
+<p>
+                <strong>Τελευταία ενημέρωση:</strong> 
+                <time datetime="2025-09-29">29 Σεπτεμβρίου 2025</time>
+            </p>
+        </footer>
+    </article>
+    <!--Page Footer-->
+    <footer>
+        <hr>
+        <p><small>
+            &copy; 2025 Άγγελος Φραντζεσκάκης | 
+            <a href="mailto:aggelost2016@gmail.com">Επικοινωνία</a>
+        </small></p>
+    </footer>
+ </body>
+</html>
