@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === HEADER === */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #ecf0f1;
+}
+
+/* === NAVIGATION === */
+.navigation {
+    background-color: #34495e;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.navigation a:hover {
+    background-color: #2c3e50;
+    border-radius: 5px;
+}
+
+/* === CONTAINER === */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* === SECTIONS === */
+.section {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* === SKILLS GRID === */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.skill-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #555;
+}
+
+/* === PROJECTS === */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 4px solid #e74c3c;
+}
+
+.project-item h3 {
+    color: #e74c3c;
+    margin-bottom: 8px;
+}
+
+/* === CONTACT === */
+.contact-info {
+    font-size: 1.1em;
+    line-height: 2;
+}
+
+/* === FOOTER === */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .header h1 {
+        font-size: 2em;
+    }
+    
+    .navigation a {
+        display: block;
+        margin: 5px 0;
+    }
+}
