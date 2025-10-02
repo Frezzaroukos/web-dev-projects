@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    background-color: rgb(80, 108, 117);
+    color: rgb(255, 255, 255);
+    width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+   
+}
+
+.card-header {
+    flex-shrink: 0;
+}
+
+.profile-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.card-body {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.name {
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.role {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+}
+
+.tagline {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 10px 0;
+}
+
+.card-footer {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.contact-link:hover {
+    background-color: white;
+    color: rgb(80, 108, 117);
+}
