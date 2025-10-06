@@ -167,5 +167,27 @@ body{
     margin-bottom: var(--space-6);
 }
 
+.divider {
+    display: flex;
+    align-items: center;
+    margin: var(--space-6) 0;
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+}
 
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #e2e8f0; 
+}
 
+.divider::before {
+    margin-right: var(--space-4);
+}
+
+.divider::after {
+    margin-left: var(--space-4);
+}
