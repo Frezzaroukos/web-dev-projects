@@ -118,3 +118,38 @@ body{
     color: var(--text-secondary);
     opacity: 0.6;
 }
+
+.form-options {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    margin-bottom: var(--space-6);
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.remember-me label {
+    font-size: var(--text-sm);
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.remember-me input[type="checkbox"] {
+    cursor: pointer;   
+    width: 16px;
+    height: 16px;
+}
+
+.forgot-password {
+    font-size: var(--text-sm);
+    color: var(--accent-main);
+    text-decoration: none;
+    font-weight: var(--font-medium);
+    transition: color 0.2s ease;
+}
+
+
