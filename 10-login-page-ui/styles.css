@@ -152,4 +152,20 @@ body{
     transition: color 0.2s ease;
 }
 
+.btn-login {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    background-color: var(--accent-main);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: var(--space-6);
+}
+
+
 
