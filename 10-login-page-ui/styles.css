@@ -191,3 +191,24 @@ body{
 .divider::after {
     margin-left: var(--space-4);
 }
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+}
+
+.btn-social {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    background-color: white;
+    color: var(--text-primary);
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-md);
+    font-family: inherit;
+    font-size: var(--text-base);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
