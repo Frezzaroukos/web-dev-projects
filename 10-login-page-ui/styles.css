@@ -87,3 +87,34 @@ body{
     font-size: var(--text-base);
     font-weight: var(--font-normal);
 }
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-bottom: var(--space-6);
+}
+
+.input-group label {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--text-primary);
+}
+
+.form-input{
+    padding: var(--space-3) var(--space-4);
+    font-family: inherit;
+    font-size:var(--text-base) ;
+    background-color: var(--bg-input);
+    color: var(--text-primary);
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-md);
+    transition: all 0.2s ease;
+    outline: none;
+    width: 100%;
+}
+
+.form-input::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
