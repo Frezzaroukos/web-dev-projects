@@ -212,3 +212,15 @@ body{
     cursor: pointer;
     transition: all 0.2s ease;
 }
+
+.card-footer {
+    text-align: center;
+    margin-top: var(--space-6);
+    padding-top: var(--space-6);
+    border-top: 1px solid #e2e8f0;
+}
+
+.card-footer p {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+}
